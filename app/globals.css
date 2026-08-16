@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+
+
+
+@layer utilities{
+    .heading{
+        @apply uppercase bg-black px-5 py-3 text-white font-extrabold text-center sm:text-[54px] sm:leading-16 text-[26px] leading-10.5 my-7 max-w-5xl
+    }
+}
+
+.section_container{
+    @apply px-6 py-7 max-w-7xl mx-auto
+}
+.card_grid{
+    @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5
+}
+
+.card_grid_sm{
+    @apply grid sm:grid-cols-2 gap-5
+}
+.pattern {
+     background-image: linear-gradient(
+        to right,
+        transparent 49.5%,
+        rgba(251, 232, 67, 0.2) 49.5%
+        rgba(251, 232, 67, 0.2) 50.5%
+        transparent 50.5%
+
+     );
+     background-size: 5% 100%;
+     background-position: center;
+     background-repeat: repeat-x;
+}
