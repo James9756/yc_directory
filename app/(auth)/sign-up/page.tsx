@@ -11,14 +11,14 @@ export default async function page() {
 
   return (
     <div>
-          <Suspense fallback={<div className="animate-pulse ">Creating User</div>}>
+          
             <SessionProvider session={session}>
 
               <SignUpForm/>
 
             </SessionProvider>
              
-          </Suspense>
+          
        </div>
   )
 }
